@@ -1,0 +1,21 @@
+@import '_vars.css';
+@import '_base.css';
+
+
+/* Fading entrances  */
+@import 'fading_entrances/fadeIn.css';
+@import 'fading_entrances/fadeInDown.css';
+@import 'fading_entrances/fadeInDownBig.css';
+@import 'fading_entrances/fadeInLeft.css';
+@import 'fading_entrances/fadeInLeftBig.css';
+@import 'fading_entrances/fadeInRight.css';
+@import 'fading_entrances/fadeInRightBig.css';
+@import 'fading_entrances/fadeInUp.css';
+@import 'fading_entrances/fadeInUpBig.css';
+@import 'fading_entrances/fadeInTopLeft.css';
+@import 'fading_entrances/fadeInTopRight.css';
+@import 'fading_entrances/fadeInBottomLeft.css';
+@import 'fading_entrances/fadeInBottomRight.css';
+
+
+

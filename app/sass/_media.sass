@@ -1,0 +1,293 @@
+@import "vars"
+
+
+/*==========  Desktop First  ==========*/
+
+// ≥1200px
++media-breakpoint-down(lg)
+	.form
+		&__arrow
+			display: none!important
+	.partners
+		&__slide-img
+			max-width: 90%
+	.services
+		margin: -7px
+		&__img
+			max-width: 100px
+			max-height: 100px
+		&__wrap
+			height: 100%
+		&__item
+			padding: 7px
+		&__caption
+			font-size: rem(18)
+		&__text
+			font-size: rem(14)
+
+
+	.count
+		&__text
+			font-size: rem(14)
+	.format
+		&__wrap
+			padding: 40px 20px 30px
+		&__caption
+			font-size: rem(20)
+			margin-bottom: 20px
+		&__icon-wrap
+			width: 60px
+			height: 60px
+		&__icon
+			height: 20px
+	.sticky-form
+		margin: 30px auto 0
+		display: flex
+		justify-content: center
+	.main
+		padding-top: 50px
+// ≥992px
++media-breakpoint-down(md)
+	.slick-arrow
+		width: 35px 
+		height: 35px
+		&__img
+			height: 50%	
+	.partners
+		&__slide-img
+			max-height: 100%
+			margin: auto
+			display: block
+		&__caption
+			margin-bottom: 25px
+	.main
+		&__h1
+			font-size: rem(30)
+			margin-top: 40px
+			span
+				white-space: nowrap
+			br
+				display: none
+		&__btns
+			margin-bottom: 40px
+		&__bg-wrap
+			opacity: .5
+			width: 80vw
+	.advantages
+		margin: 0
+		&__text
+			font-size: rem(14)
+		&__wrap
+			padding-left: 35px
+		&__icon
+			max-height: 35px
+		&__col
+			padding-left: 15px
+			padding-right: 15px
+	.services
+		&__shape
+			display: none
+		&__text
+			margin-bottom: 100px
+	.section
+		padding: 45px 0
+		&--pt0
+			padding-top: 0
+		&--map
+			padding-bottom: 0		
+	.logo
+		&__img
+			height: 33px
+			object-fit: contain
+			object-position: left
+			max-width: 120px
+	.phone, .soc, .btn--header
+		margin-left: 15px
+	.phone
+		&::before
+			display: none
+	.header
+		padding: 10px 0
+	.count
+		margin-bottom: 30px
+		text-align: left
+		&__num
+			margin-bottom: 10px
+			font-size: rem(40)
+	.row-offset-30
+		margin-bottom: -30px
+	.standart
+		&__caption
+			font-size: rem(18)
+	.cta
+		margin-bottom: 30px
+		&__caption
+			font-size: rem(25)
+			margin-bottom: 5px
+		&__text
+			font-size: rem(16)	
+	.form
+		&__wrap
+			padding: 30px	
+	.cta-img
+		max-width: 350px
+		margin-left: auto
+		margin-right: auto
+	.h2
+		margin-bottom: 30px
+		&__text
+			font-size: rem(22)	
+	.footer
+		padding-bottom: 10px
+		&__item
+			margin-bottom: 40px
+
+// ≥768px
++media-breakpoint-down(sm)
+	body
+		overflow-x: hidden
+	.tabs
+		&__header
+			flex-direction: column
+	.page-caption
+		margin-top: 0
+		margin-bottom: 30px
+		&__h1
+			font-size: rem(25)
+	.page-banner
+		margin-bottom: 20px
+	.page-text
+		font-size: rem(16)
+		line-height: 1.75
+	.page-content
+		padding-bottom: 30px
+	.map
+		height: auto
+		&__map
+			height: 60vh
+			position: relative
+		&__content
+			max-width: 100%
+			margin-bottom: 20px
+	.notfound
+		&__h1
+			font-size: rem(100)
+	.sticky-img
+		opacity: .2
+		max-width: 250px
+		&-wrap
+			position: absolute
+			height: 100%
+		&__img
+			max-width: 300px
+			left: 40vw
+	.steps
+		&__text
+			padding-right: 20px
+		&__item
+			&:not(:last-child)
+				margin-bottom: 20px
+			&:after
+				display: none
+			&:before
+				right: 10px
+				font-size: rem(70)
+		&__caption
+			margin-bottom: 0
+			font-size: rem(17)
+		&__text
+			font-size: rem(14)
+	.popup
+		padding: 20px
+		&__caption
+			font-size: rem(23)
+		&__description
+			font-size: rem(16)
+
+	.footer
+		padding: 30px 0
+		&__item
+			margin-bottom: 0
+			&:not(:last-child)
+				margin-bottom: 25px
+	.cta-img
+		margin-top: 35px
+		margin-left: 0
+	.form
+		&__wrap
+			padding: 20px	
+	.count
+		&__num
+			font-size: rem(70)
+	.btn
+		&--header
+			max-width: 400px
+			margin-left: auto
+			margin-right: 0
+	.callback-btn
+		bottom: 25px
+		right: 25px
+		width: 45px
+		height: 45px
+		&:before, &:after
+			content: " "
+			display: block
+			position: absolute
+			border: 50%
+			border: 1px solid var(--light-blue)
+			left: -10px
+			right: -10px
+			top: -10px
+			bottom: -10px
+			border-radius: 50%
+			animation: animate 1.5s linear infinite
+			opacity: 0
+			backface-visibility: hidden
+	.cars-prop
+		margin: -10px -10px 40px -10px
+		&__item
+			flex: auto
+			width: 100%		
+			padding: 10px
+
+// ≥576px
++media-breakpoint-down(xs)
+	.main
+		&__btns
+			flex-direction: column
+			.btn
+				margin-right: 0
+				max-width: 400px
+				&:not(:last-child)
+					margin-bottom: 15px
+		&__bg
+			object-fit: cover
+			object-position: left
+			height: 50%
+			margin: auto
+	.advantages
+		flex-direction: column
+		&__item
+			margin-bottom: 15px
+		&__col
+			padding-right: 0
+	.services
+		flex-direction: column
+		&__item
+			width: 100%
+	.cta-img
+		margin-left: auto
+		width: 100%
+/*==========  Mobile First  ==========*/
+
+// ≤576px
++media-breakpoint-up(sm)
+
+// ≤768px
++media-breakpoint-up(md)
+
+// ≤992px
++media-breakpoint-up(lg)
+
+// ≤1200px
++media-breakpoint-up(xl)

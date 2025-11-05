@@ -1,0 +1,1222 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+	<!-- <base href="/"> -->
+
+	<title>КомТрансАвто | Вывоз мусора</title>
+	<meta name="description" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="icon" href="img/favicon/favicon.ico">
+	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png">
+	<link rel="preload" as="image" href="/img/main-bg.png" />
+	<meta name="theme-color" content="#000">
+	<link rel="stylesheet" href="css/main.min.css">
+
+</head>
+
+<body>
+
+
+	<header class="header align-items-center">
+		<div class="custom-container header__wrap flex">
+				<div class="header__item flex align-items-center">
+					<a href='/' class="logo">
+						<img data-src="img/logo.svg" width="200" height="200" class="lazy logo__img">
+					</a>					
+				</div>
+				<div class="header__item header__item--right flex justify-content-end align-items-center">
+
+					<div class="menu d-none d-lg-block">
+						<nav class="menu__nav">
+							<ul class="menu__ul flex equalheight space-between m-7">
+								<li class="menu__li">
+									<a href="#company" rel='m_PageScroll2id' class="menu__a">О нас</a>
+								</li>
+								<li class="menu__li">
+									<a href="#footer" rel='m_PageScroll2id' class="menu__a">Контакты</a>
+								</li>
+							</ul>
+						</nav>						
+					</div>
+
+					<a href="tel:+73462550379" class="phone">
+						+7-3462-55-03-79
+					</a>
+
+					<div class="soc d-none d-lg-flex">
+						<a href="" class="soc__item">
+							<img src="/img/soc/whatsapp.svg" alt="" class="lazy soc__icon img-svg">
+						</a>
+						<a href="" class="soc__item">
+							<img src="/img/soc/viber.svg" alt="" class="lazy soc__icon img-svg">
+						</a>
+					</div>
+
+					<a href="#order-popup" class="popup-link d-none d-md-block btn--header btn btn--green">
+						Отправить заявку
+					</a>
+
+					<div class="burger d-block d-lg-none">
+						<a href="#" class="toggle-mnu"><span></span></a>
+					</div>	
+				</div>
+
+		</div>
+	</header>
+
+	<div class="mob-menu">
+	    <nav class="mob-menu__nav flex flex-column">
+	        <ul class="mob-menu__ul">
+	            <li class="mob-menu__li">
+	                <a href="#company" rel='m_PageScroll2id' class="mob-menu__a">О нас</a>
+	            </li>
+	            <li class="mob-menu__li">
+	                <a href="#footer" rel='m_PageScroll2id' class="mob-menu__a">Контакты</a>
+	            </li>
+	        </ul>
+	    </nav>
+	    <div class="phones-list phones-list--mob">
+	        <a href="+79147049555" class="black phones-list__item">
+	            +7-3462-55-03-79
+	        </a>
+	    </div>
+
+	    <div class="soc soc--mob justify-content-end ">
+	        <a href="" class="soc__item">
+	            <img src="/img/soc/whatsapp.svg" alt="" class="lazy soc__icon img-svg">
+	        </a>
+	        <a href="" class="soc__item">
+	            <img src="/img/soc/viber.svg" alt="" class="lazy soc__icon img-svg">
+	        </a>
+	    </div>
+
+	    <a href="#order-popup" class="popup-link btn--header btn btn--green">
+	        Отправить заявку
+	    </a>
+
+	</div>
+
+
+
+	<main class="main">
+		<div class="custom-container">
+			<div class="main__h1 animated fadeInUp">
+				Вывоз мусора <span class='black-italic'>в ХМАО</span> на <br>полигон <span class='black-italic'>от 2 000 ₽</span>
+			</div>
+			<div class="main__btns flex animated fadeInUp delay-1s">
+				<a href="#order-popup" class="popup-link btn btn--big btn--arrow">Заказать вывоз</a>
+				<a href="#contract-popup" class="popup-link btn btn--green btn--big btn--arrow">Запросить КП</a>
+			</div>			
+			<div class="advantages flex animated fadeInUp delay-2s">
+				<div class="advantages__col">
+					<div class="advantages__item">
+						<div class="advantages__wrap">
+							<img data-src="img/first-screen/1.png" width='50' height='50' class="advantages__icon lazy">
+							<div class="advantages__caption bold">
+								Быстрая подача
+							</div>
+							<div class="advantages__text">
+								Привезем или вывезем контейнер в течение 1 дня
+							</div>
+						</div>
+					</div>
+					<div class="advantages__item">
+						<div class="advantages__wrap">
+							<img data-src="img/first-screen/2.png" width='50' height='50' class="advantages__icon lazy">
+							<div class="advantages__caption bold">
+								Точно в оговоренные сроки
+							</div>
+							<div class="advantages__text">
+								Приедем точно по графику, независимо от погоды или дорожных пробок
+							</div>
+						</div>
+					</div>					
+				</div>
+				<div class="advantages__col">
+					<div class="advantages__item">
+						<div class="advantages__wrap">
+							<img data-src="img/first-screen/3.png" width='50' height='50' class="advantages__icon lazy">
+							<div class="advantages__caption bold">
+								Фиксированная цена
+							</div>
+							<div class="advantages__text">
+								Вы оплачиваете услуги по договору, стоимость остается неизменной
+							</div>
+						</div>
+					</div>
+
+					<div class="advantages__item">
+						<div class="advantages__wrap">
+							<img data-src="img/first-screen/4.png" width='50' height='50' class="advantages__icon lazy">
+							<div class="advantages__caption bold">
+								Услуги грузчиков
+							</div>
+							<div class="advantages__text">
+								Поможем погрузить в бункеры ТБО или строительный мусор в любых объемах
+							</div>
+						</div>
+					</div>					
+				</div>
+
+				
+
+			</div>
+		</div>
+		<div class="main__bg-wrap">
+			<img data-src="img/main-bg.png" class='lazy main__bg'> 
+		</div>
+	</main>
+
+
+
+
+
+	<section class="section" id='services'>
+		<div class="custom-container">
+			<div class="h2">
+				<h2 class="h2__text">
+					Какой мусор мы можем вывезти
+				</h2>
+			</div>
+			<div class="row">
+				<div class="col-md-8">
+					<div class="services">
+
+						<div class="services__item">
+							<div class="services__wrap">
+								<div class="services__caption bold">
+									Твердые коммунальные отходы
+								</div>
+								<div class="services__text">
+									<div class="services__shape"></div>
+									<span>Погрузим и вывезем накопившиеся отходы - от пищевой органики и синтетических, до стекла и металла.</span>
+								</div>
+
+								<img data-src="img/services/1.png" class="services__img lazy" width='120' height='120'>
+							</div>
+						</div>
+
+						<div class="services__item">
+							<div class="services__wrap">
+								<div class="services__caption bold">
+									Крупногабаритный мусор
+								</div>
+								<div class="services__text">
+									<div class="services__shape"></div>
+									<span>К этой категории относятся предметы, которые невозможно утилизировать на придомовую контейнерную площадку. Ненужное пианино, сломанный холодильник или стиральная машина.</span>
+								</div>
+								<img data-src="img/services/2.png" class="services__img lazy" width='120' height='120'>
+							</div>
+						</div>
+
+						<div class="services__item">
+							<div class="services__wrap">
+								<div class="services__caption bold">
+									Строительные отходы
+								</div>
+								<div class="services__text">
+									<div class="services__shape"></div>
+									<span>Уберем со стройплощадки кирпичный бой, очистим от бетона, кусков плит, деревянных или пластиковых оконных рам.</span>
+								</div>
+								<img data-src="img/services/3.png" class="services__img lazy" width='120' height='120'>
+							</div>
+						</div>
+
+						<div class="services__item">
+							<div class="services__wrap">
+								<div class="services__caption bold">
+									Старая мебель
+								</div>
+								<div class="services__text">
+									<div class="services__shape"></div>
+									<span>Наши рабочие вынесут и погрузят в машину старые диваны, кресла, шкафы, старую сантехнику, сломанные холодильники и другие ненужные предметы из квартиры или частного дома.</span>
+								</div>
+								<img data-src="img/services/4.png" class="services__img lazy" width='120' height='120'>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="sticky-form sticky-form">
+						<form class="form form--arrow">
+								<img data-src="img/thin-arrow.png" class="form__arrow lazy">
+								<div class="form__header">
+									<div class="form__caption bold">
+										Отправьте заявку <br>на вывоз мусора
+									</div>
+									<div class="form__description">
+										Заполните форму ниже, мы перезвоним в течение 5 минут
+									</div>									
+								</div>
+								<div class="form__input-wrap form__icon form__icon--phone form__row">
+									<input type="tel" class='form__input' placeholder='Телефон'>
+								</div>
+
+								<div class="form__row">
+									<button class="bold btn btn--fullwidth">Отправить заявку</button>
+								</div>
+								<div class="form__row">
+									<div class="privacy">
+										Отправляя заявку, даю согласие на <a class='privacy__a italic' href="/privacy" target='_blank'>обработку персональных данных</a>
+									</div>
+								</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<section class="section section--line section--gray">
+		<img data-src="img/top.png" class="section-line section-line-top lazy">
+		<div class="custom-container">
+			<div class="h2">
+				<h2 class="h2__text">
+					Формат работы
+				</h2>
+			</div>
+			<div class="format row">
+
+				<div class="col-md-4 col-sm-6 format__item wow fadeInUp">
+					<div class="format__wrap">
+						<div class="format__icon-wrap">
+							<img src="img/iconset-1/1.svg" alt="" class="format__icon">
+						</div>
+						<div class="format__caption">
+							Разовый вывоз мусора
+						</div>
+						<a href="#order-popup" class="popup-link btn btn--format bold btn--green">Заказать</a>
+					</div>
+				</div>
+
+				<div class="col-md-4 col-sm-6 format__item wow fadeInUp">
+					<div class="format__wrap">
+						<div class="format__icon-wrap">
+							<img src="img/iconset-1/2.svg" alt="" class="format__icon">
+						</div>
+						<div class="format__caption">
+							Контейнеры на короткий срок
+						</div>
+						<a href="#order-popup" class="popup-link btn format__btn bold btn--format btn--green">Заказать</a>
+					</div>
+				</div>
+
+				<div class="col-md-4 col-sm-6 format__item wow fadeInUp">
+					<div class="format__wrap">
+						<div class="format__icon-wrap">
+							<img src="img/iconset-1/3.svg" alt="" class="format__icon">
+						</div>
+						<div class="format__caption">
+							Долгосрочное сотрудничество
+						</div>
+						<a href="#contract-popup" class="popup-link btn btn--format bold btn--green">Заключить договор</a>
+					</div>
+				</div>
+			</div>			
+		</div>
+		<img data-src="img/bottom.png" class="section-line section-line-bottom lazy">
+	</section>
+
+
+
+	<section class="section" id='steps'>
+		<div class="custom-container">
+			<div class="h2">
+				<h2 class="h2__text">
+					Как заказать вывоз мусора в “Комтрансавто”?
+				</h2>
+			</div>				
+			<div class="row pos-r">
+				<div class="col-md-6">
+					<div class="steps">
+						<div class="steps__item wow fadeInUp">
+							<div class="steps__caption">
+								Обработка заявки
+							</div>
+							<div class="steps__text">
+								Наши специалисты обрабатывают заявки с сайта в течение 15 минут после вашего звонка.
+							</div>
+						</div>
+
+						<div class="steps__item wow fadeInUp">
+							<div class="steps__caption">
+								Подбор техники
+							</div>
+							<div class="steps__text">
+								На основании предоставленных данных подбирается необходимая спецтехника: мусоровоз с контейнером нужной грузоподъемности или автомобиль Газель
+							</div>
+						</div>
+
+						<div class="steps__item wow fadeInUp">
+							<div class="steps__caption">
+								Подача контейнера
+							</div>
+							<div class="steps__text">
+								Машина приедет по адресу в указанное время, контейнер будет установлен в удобном месте. Если вам понадобятся грузчики - предупредите, мы их предоставим.
+							</div>
+						</div>
+
+						<div class="steps__item wow fadeInUp">
+							<div class="steps__caption">
+								Вывоз и утилизация
+							</div>
+							<div class="steps__text">
+								После загрузки контейнера, отходы отправляются на переработку и утилизацию. Вы получаете талон с полигона и акт об обказанных услугах.
+							</div>
+						</div>
+
+						<div class="steps__item wow fadeInUp">
+							<div class="steps__caption">
+								Удобная оплата
+							</div>
+							<div class="steps__text">
+								Оплачиваете наши услуги удобным способом: банковской картой, на рассчетный счет или наличными.
+							</div>
+						</div>
+					</div>					
+				</div>
+				<div class="col-md-6 sticky-img-wrap">
+					<div class="sticky-img">
+						<img data-src="img/container.jpg" class="lazy sticky-img__img">
+					</div>
+					
+				</div>
+			</div>
+			
+
+		</div>
+	</section>
+
+
+
+
+	<section class="section" id='standarts'>
+		<div class="custom-container">
+			<div class="h2">
+				<h2 class="h2__text">
+					Обеспечиваем высокие стандарты работы
+				</h2>
+			</div>	
+			<div class="row standart">
+				<div class="col-md-6 standart__item wow fadeInUp">
+					<div class="standart__wrap">
+						<img src="img/iconset-2/1.svg" class="standart__icon">
+						<div class="standart__caption">
+							Продуманная логистика
+						</div>
+						<div class="standart__description">
+							Наши диспетчеры подберут оптимальный график подачи и вывоза контейнеров, исходя из графика работы вашего предприятия. За каждым клиентом закрепляется индивидуальный менеджер, который контролирует все этапы выполнения вашего заказа.
+						</div>						
+					</div>
+				</div>
+
+				<div class="col-md-6 standart__item wow fadeInUp">
+					<div class="standart__wrap">
+						<img src="img/iconset-2/2.svg" class="standart__icon">
+						<div class="standart__caption">
+							Своя спецтехника
+						</div>
+						<div class="standart__description">
+							В нашем распоряжении имеется собственный парк современной техники: самосвалы, погрузчики, газели и контейнеровозы. Все машины проходят техосмотр перед выходом в рейс, поэтому исключены задержки в пути по вине вышедшей из строя техники.
+						</div>						
+					</div>
+				</div>
+
+				<div class="col-md-6 standart__item wow fadeInUp">
+					<div class="standart__wrap">
+						<img src="img/iconset-2/3.svg" class="standart__icon">
+						<div class="standart__caption">
+							Экономия средств
+						</div>
+						<div class="standart__description">
+							Сотрудничая с нами вы экономите свое время и деньги. Вы не будете тратить время на подбор оптимального контейнера, поиск грузчиков или трактора. Один звонок в нашу компанию разом решит все проблемы. При заключении долгосрочных договоров предоставляются индивидуальные скидки.
+						</div>						
+					</div>
+				</div>
+
+				<div class="col-md-6 standart__item wow fadeInUp">
+					<div class="standart__wrap">
+						<img src="img/iconset-2/4.svg" class="standart__icon">
+						<div class="standart__caption">
+							Надежность предоставляемых услуг
+						</div>
+						<div class="standart__description">
+							КомТрансАвто более 10 лет работает в сфере транспортировки и утилизации ТБО, промышленного и строительного мусора. Все наши сотрудники имеют необходимые права и лицензии на управление техникой, которая проходит регулярный технический осмотр. Поэтому наш транспорт всегда приезжает вовремя.
+						</div>						
+					</div>
+				</div>
+
+
+			</div>		
+		</div>
+	</section>
+
+
+	<section class="section section--pt0">
+		<div class="custom-container">
+			<div class="row partners">
+				<div class="col-lg-4 d-flex align-items-center">
+					<div class="partners__caption">
+						С нами сотрудничают
+					</div>
+				</div>
+				<div class="col-lg-8">
+					<div class="partners__slider slider" data-slides='4' data-arrowcolor='' data-name='partners' data-arrow='false' data-autoplay='true'>
+						<div class="partners__slide-item">
+							<img data-lazy="img/sber.png" class="partners__slide-img">
+						</div>
+						<div class="partners__slide-item">
+							<img data-lazy="img/sber.png" class="partners__slide-img">
+						</div>
+						<div class="partners__slide-item">
+							<img data-lazy="img/sber.png" class="partners__slide-img">
+						</div>
+						<div class="partners__slide-item">
+							<img data-lazy="img/sber.png" class="partners__slide-img">
+						</div>
+						<div class="partners__slide-item">
+							<img data-lazy="img/sber.png" class="partners__slide-img">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="section section--line section--blue">
+		<img data-src="img/top.png" class="section-line section-line-top lazy">
+		<div class="custom-container">
+			<div class="row">
+				<div class="col-md-6 wow fadeInUp">
+					<div class="cta">
+						<div class="cta__caption">
+							Заказать вывоз мусора
+						</div>
+						<div class="cta__text italic">
+							Оставьте заявку в форме ниже. Мы позвоним в течение 5 минут в рабочее время (9:00-17:00)
+						</div>
+					</div>
+					<form class="form">
+						<div class="form__wrap">
+
+							<div class="form__input-wrap form__icon form__icon--city form__row">
+								<select class="form__select">
+									<option value="">Выберите город</option>
+								    <option value="" class="form__option">г. Сургут</option>
+								    <option value="" class="form__option">Сургутский район (весь, кроме г.п. Белый Яр)</option>
+								    <option value="" class="form__option">г. Когалым</option>
+								    <option value="" class="form__option">г. Нижневартовск</option>
+								    <option value="" class="form__option">Нижневартовский район (г.п. Излучинск)</option>
+								    <option value="" class="form__option">г. Ханты-Мансийск</option>
+								    <option value="" class="form__option">г. Нягань</option>
+								    <option value="" class="form__option">Березовский район (весь)</option>
+								    <option value="" class="form__option">Белоярский район (весь)</option>
+								    <option value="" class="form__option">Октябрьский район (весь)</option>
+								</select>	
+							</div>
+
+							<div class="form__input-wrap form__icon form__icon--type form__row">
+								<input type="text" class='form__input' placeholder='Тип мусора'>
+							</div>
+
+							<div class="form__input-wrap form__icon form__icon--volume form__row">
+								<input type="text" class='form__input' placeholder='Объем (приблизительно)'>
+							</div>
+
+							<div class="form__input-wrap form__icon form__icon--phone form__row">
+								<input type="tel" class='form__input' placeholder='Телефон'>
+							</div>
+
+							<div class="form__row">
+								<button class="btn btn--submit btn--green">Отправить заявку</button>
+							</div>
+							<div class="form__row">
+								<div class="privacy">
+									Отправляя заявку, даю согласие на <a class='privacy__a italic' href="/privacy" target='_blank'>обработку персональных данных</a>
+								</div>
+							</div>
+						</div>
+					</form>
+				</div>
+				<div class="col-md-6 d-flex align-items-end">
+					<img data-src="img/blue-car.png" class="wow fadeInUp cta-img lazy">
+				</div>
+			</div>
+		</div>
+		<img data-src="img/bottom.png" class="section-line section-line-bottom lazy">
+	</section>
+
+
+	<section class="section" id='company'>
+		<div class="custom-container">
+
+			<div class="h2">
+				<h2 class="h2__text">
+					О компании в цифрах
+				</h2>
+			</div>
+
+			<div class="row row-offset-30">
+				<div class="col-md-6 col-lg-3">
+					<div class="count wow fadeInUp slow">
+						<div class="count__num black" data-count='50'>0</div>
+						<div class="count__text">Более <span class='bold'>50</span> управляющих компаний сотрудничают с нами</div>
+					</div>
+				</div>
+				<div class="col-md-6 col-lg-3">
+					<div class="count wow fadeInUp slow">
+						<div class="count__num black" data-count='10000'>0</div>
+						<div class="count__text">Более <span class='bold'>10 000</span> контейнеров в обслуживании</div>
+					</div>					
+				</div>
+				<div class="col-md-6 col-lg-3">
+					<div class="count wow fadeInUp slow">
+						<div class="count__num black" data-count='60'>0</div>
+						<div class="count__text">Более <span class='bold'>60</span> единиц собственной техники</div>
+					</div>					
+				</div>
+				<div class="col-md-6 col-lg-3">
+					<div class="count wow fadeInUp slow">
+						<div class="count__num black" data-count='5000'>0</div>
+						<div class="count__text">Более <span class='bold'>5 000</span> контейнерных площадок в обслуживании</div>
+					</div>					
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="section section--triangle-gray">
+		<div class="custom-container">
+			<div class="row">
+				<div class="col-md-9">
+					<div class="h2">
+						<h2 class="h2__text">
+							Всегда чистые автомобили и вежливые водители
+						</h2>
+						<div class="h2__description">
+							У нас работают водители-профессионалы с многолетним опытом за рулем грузовой спецтехники. Имеем свой автопарк современного транспорта, который гарантированно доедет из точки "А" в точку "Б".
+						</div>
+					</div>
+					<div class="cars-prop flex">
+
+						<div class="cars-prop__item">
+							<div class="cars-prop__wrap cars-prop__alert">
+								<div class="cars-prop__top">
+									<div class="cars-prop__icon-wrap">
+										<img src="img/iconset-3/1.svg" class="cars-prop__icon">
+									</div>
+									<div class="cars-prop__caption">
+										Всегда чистые мусоровозы
+									</div>
+								</div>
+								<div class="cars-prop__text">
+									Водители моют авто каждые 5 дней или сразу после сильного загрязнения
+								</div>
+							</div>
+						</div>
+
+						<div class="cars-prop__item">
+							<div class="cars-prop__wrap">
+								<div class="cars-prop__top">
+									<div class="cars-prop__icon-wrap">
+										<img src="img/iconset-3/2.svg" class="cars-prop__icon">
+									</div>
+									<div class="cars-prop__caption">
+										Собственный транспорт
+									</div>
+								</div>
+								<div class="cars-prop__text">
+									Свой автопарк современных грузовиков
+								</div>
+							</div>
+						</div>
+
+						<div class="cars-prop__item">
+							<div class="cars-prop__wrap">
+								<div class="cars-prop__top">
+									<div class="cars-prop__icon-wrap">
+										<img src="img/iconset-3/3.svg" class="cars-prop__icon">
+									</div>
+									<div class="cars-prop__caption">
+										Профессиональные обученные водители
+									</div>
+								</div>
+								<div class="cars-prop__text">
+									С многолетним опытом за рулем грузовой техники
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="cars-slider slider" data-slides='1' data-arrowcolor='blue' data-arrow='true' data-autoplay='true' id='lightgallery'>
+						<a href='img/cars/1.jpg' data-src='img/cars/1.jpg' class="cars-slider__item">
+							<div class="cars-slider__wrap">
+								<img data-lazy="img/cars/1.jpg" class="cars-slider__img">
+							</div>
+						</a>
+						<a href='img/cars/2.jpg' data-src='img/cars/2.jpg' class="cars-slider__item">
+							<div class="cars-slider__wrap">
+								<img data-lazy="img/cars/2.jpg" class="cars-slider__img">
+							</div>
+						</a>
+						<a href='img/cars/3.jpg' data-src='img/cars/3.jpg' class="cars-slider__item">
+							<div class="cars-slider__wrap">
+								<img data-lazy="img/cars/3.jpg" class="cars-slider__img">
+							</div>
+						</a>
+						<a href='img/cars/4.jpg' data-src='img/cars/4.jpg' class="cars-slider__item">
+							<div class="cars-slider__wrap">
+								<img data-lazy="img/cars/4.jpg" class="cars-slider__img">
+							</div>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="section">
+		<div class="custom-container">
+			<div class="row">
+				<div class="col-md-3  d-flex align-items-center">
+
+					<div class="h2">
+						<h2 class="h2__text">
+							Сертификаты и лицензии
+						</h2>
+					</div>
+				</div>
+				<div class="col-md-9">
+					<div class="cert slider" data-slides='3' data-arrowcolor='green' data-arrow='true' data-autoplay='true' id='lightgallery'>
+						<a href='img/cert/1.jpg' data-src='img/cert/1.jpg' class="cert__item">
+							<img data-lazy="img/cert/1.jpg" class="cert__img">
+						</a>
+						<a href='img/cert/2.jpg' data-src='img/cert/1.jpg' class="cert__item">
+							<img data-lazy="img/cert/2.jpg" class="cert__img">
+						</a>						
+						<a href='img/cert/1.jpg' data-src='img/cert/1.jpg' class="cert__item">
+							<img data-lazy="img/cert/1.jpg" class="cert__img">
+						</a>
+						<a href='img/cert/2.jpg' data-src='img/cert/1.jpg' class="cert__item">
+							<img data-lazy="img/cert/2.jpg" class="cert__img">
+						</a>
+						<a href='img/cert/2.jpg' data-src='img/cert/1.jpg' class="cert__item">
+							<img data-lazy="img/cert/2.jpg" class="cert__img">
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+
+	<section class="section section--line section--map section--blue" id='regions'>
+		<img data-src="img/top.png" class="section-line section-line-top lazy">
+
+		<div class="custom-container">
+			<div class="region">
+				<div class="region__caption h2__text text-center">
+					Предоставляем услуги по всему Ханты-Мансийскому округу
+				</div>
+				<div class="region__text text-center">
+					<div class="region__text-show">
+						Основным родом деятельности компании «КомТрансАвто» является вывоз твердых коммунальных и промышленных отходов. Вы можете заказать вывоз мусора у нас вне зависимости от его объема. Для осуществления подобной деятельности нами используются контейнеры объемом от 1.1 до 8 м3. Для вывоза мусора контейнер 8 м3 довольно удобен.
+					</div>
+					<a href="#" class="region__show-link">
+						<span>Читать подробнее</span>
+					</a>
+					<div class="region__text-hide">
+						<p>Мы работаем как с физическими, так и с юридическими лицами, и готовы предоставить всю нужную документацию. Вы можете заказать контейнер для вывоза мусора как разово, так и заключить долговременный контракт на утилизацию отходов. Мы предлагаем вам заказать вывоз строительного мусора и больше никогда не беспокоиться о его утилизации.</p>
+						<p>Заказать вывоз мусора могут и те, кто осуществляет ремонт в частной квартире, или у кого накопилось большое количество бытовых отходов. Заказать вывоз мусора контейнером 8м3 можно в нашей компании. Утилизация как строительных, так и бытовых отходов – это всегда большая проблема для физических лиц и компаний. Проще всего заказать вывоз мусора, ведь чтобы осуществлять это самостоятельно, необходимо соблюсти все требования законодательства.</p>
+						<p><a href="#order-popup" class="btn btn--green btn--w400 popup-link">Заказать контейнер для вывоза мусора</a></p>
+						<p>Наша компания осуществляет различные услуги по утилизации. Мы рады предложить вам заказать контейнер для вывоза мусора на условиях лучшего сочетания цены к качеству. Заказать машину для вывоза мусора у нас — прекрасный выход, так как мы полностью соблюдаем все требования законодательства: вывоз строительного мусора осуществляется отдельно от бытового на специальной технике. Такой подход, позволяющий вам беспрепятственно заказать контейнер для вывоза строительного мусора, позволяет обеспечить действительно высокое качество предоставляемой услуги.</p>
+						<p>Если вы решите заказать услугу вывоз мусора, мы приедем к Вам в удобное время и в кратчайшие сроки. На нашем сайте вы можете ознакомиться с лицензией на проведение подобных работ, а также более подробной информацией о наших услугах.</p>
+						<p>Чтобы заказать машину для вывоза мусора, вам достаточно связаться с нами при помощи контактной информации на нашем сайте. Также вы можете заказать строительный контейнер для вывоза мусора при помощи специальной формы, размещенной на сайте.Если вы заинтересовались предоставляемыми услугами по утилизации, свяжитесь с нами, чтобы заказать услугу вывоз мусора.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="map">
+			<div class="custom-container">
+				<div class="map__content">
+					<div class="map__caption black">
+						Мы находимся
+					</div>
+					<ul class="map__list">
+						<li class="map__list-item">г. Сургут</li>
+						<li class="map__list-item">Сургутский район (весь, кроме г.п. Белый Яр)</li>
+						<li class="map__list-item">г. Когалым</li>
+						<li class="map__list-item">г. Нижневартовск</li>
+						<li class="map__list-item">Нижневартовский район (г.п. Излучинск)</li>
+						<li class="map__list-item">г. Ханты-Мансийск</li>
+						<li class="map__list-item">г. Нягань</li>
+						<li class="map__list-item">Березовский район (весь)</li>
+						<li class="map__list-item">Белоярский район (весь)</li>
+						<li class="map__list-item">Октябрьский район (весь)</li>
+					</ul>
+				
+				</div>				
+			</div>
+
+			<div class="map__map" id='map'></div>
+		</div>
+
+	</section>
+
+
+
+	<section class="section">
+		<div class="custom-container">
+			<div class="h2">
+				<h2 class="h2__text">
+					Документы
+				</h2>
+			</div>
+			<div class="tabs">
+				<div class="tabs__header flex">
+					<div class="tabs__head-el active">Реестр закупок и заказов</div>
+					<div class="tabs__head-el">Реестр недобросовестных поставщиков</div>
+					<div class="tabs__head-el">Иное</div>
+				</div>
+				<div class="tabs__content">
+					<div class="tabs__item active animated slow">
+						<div class="row">
+							<div class="col-md-6 col-lg-3">
+								<div class="docs">
+									<div class="docs__wrap">
+										<div class="docs__caption medium">
+											Реестр закупок
+										</div>
+										<div class="docs__name">
+											reestr_zakupok-3.docx 23 kB
+										</div>
+										<a href="#" class="doc__btn btn btn--eye">
+											<span>Посмотреть</span>
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6 col-lg-3">
+								<div class="docs">
+									<div class="docs__wrap">
+										<div class="docs__caption medium">
+											Реестр закупок
+										</div>
+										<div class="docs__name">
+											reestr_zakupok-3.docx 23 kB
+										</div>
+										<a href="#" class="doc__btn btn btn--eye">
+											<span>Посмотреть</span>
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6 col-lg-3">
+								<div class="docs">
+									<div class="docs__wrap">
+										<div class="docs__caption medium">
+											Реестр закупок
+										</div>
+										<div class="docs__name">
+											reestr_zakupok-3.docx 23 kB
+										</div>
+										<a href="#" class="doc__btn btn btn--eye">
+											<span>Посмотреть</span>
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6 col-lg-3">
+								<div class="docs">
+									<div class="docs__wrap">
+										<div class="docs__caption medium">
+											Реестр закупок
+										</div>
+										<div class="docs__name">
+											reestr_zakupok-3.docx 23 kB
+										</div>
+										<a href="#" class="doc__btn btn btn--eye">
+											<span>Посмотреть</span>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="tabs__item animated slow">
+						<div class="row">
+							<div class="col-md-6 col-lg-3">
+								<div class="docs">
+									<div class="docs__wrap">
+										<div class="docs__caption medium">
+											Реестр закупок
+										</div>
+										<div class="docs__name">
+											reestr_zakupok-3.docx 23 kB
+										</div>
+										<a href="#" class="doc__btn btn btn--eye">
+											<span>Посмотреть</span>
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6 col-lg-3">
+								<div class="docs">
+									<div class="docs__wrap">
+										<div class="docs__caption medium">
+											Реестр закупок
+										</div>
+										<div class="docs__name">
+											reestr_zakupok-3.docx 23 kB
+										</div>
+										<a href="#" class="doc__btn btn btn--eye">
+											<span>Посмотреть</span>
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6 col-lg-3">
+								<div class="docs">
+									<div class="docs__wrap">
+										<div class="docs__caption medium">
+											Реестр закупок
+										</div>
+										<div class="docs__name">
+											reestr_zakupok-3.docx 23 kB
+										</div>
+										<a href="#" class="doc__btn btn btn--eye">
+											<span>Посмотреть</span>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="tabs__item animated slow">
+						<div class="row">
+							<div class="col-md-6 col-lg-3">
+								<div class="docs">
+									<div class="docs__wrap">
+										<div class="docs__caption medium">
+											Реестр закупок
+										</div>
+										<div class="docs__name">
+											reestr_zakupok-3.docx 23 kB
+										</div>
+										<a href="#" class="doc__btn btn btn--eye">
+											<span>Посмотреть</span>
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6 col-lg-3">
+								<div class="docs">
+									<div class="docs__wrap">
+										<div class="docs__caption medium">
+											Реестр закупок
+										</div>
+										<div class="docs__name">
+											reestr_zakupok-3.docx 23 kB
+										</div>
+										<a href="#" class="doc__btn btn btn--eye">
+											<span>Посмотреть</span>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>					
+				</div>
+			</div>
+
+	
+		</div>
+	</section>
+
+
+
+
+
+
+
+	<section class="section section--line section--blue">
+		<img data-src="img/top.png" class="section-line section-line-top lazy">
+		<div class="custom-container">
+			<div class="row">
+				<div class="col-md-6 wow fadeInUp">
+					<div class="cta">
+						<div class="cta__caption">
+							Заказать вывоз мусора
+						</div>
+						<div class="cta__text italic">
+							Оставьте заявку в форме ниже. Мы позвоним в течение 5 минут в рабочее время (9:00-17:00)
+						</div>
+					</div>
+					<form class="form">
+						<div class="form__wrap">
+
+							<div class="form__input-wrap form__icon form__icon--city form__row">
+								<select class="form__select">
+									<option value="">Выберите город</option>
+								    <option value="" class="form__option">г. Сургут</option>
+								    <option value="" class="form__option">Сургутский район (весь, кроме г.п. Белый Яр)</option>
+								    <option value="" class="form__option">г. Когалым</option>
+								    <option value="" class="form__option">г. Нижневартовск</option>
+								    <option value="" class="form__option">Нижневартовский район (г.п. Излучинск)</option>
+								    <option value="" class="form__option">г. Ханты-Мансийск</option>
+								    <option value="" class="form__option">г. Нягань</option>
+								    <option value="" class="form__option">Березовский район (весь)</option>
+								    <option value="" class="form__option">Белоярский район (весь)</option>
+								    <option value="" class="form__option">Октябрьский район (весь)</option>
+
+								</select>	
+
+							</div>
+
+							<div class="form__input-wrap form__icon form__icon--type form__row">
+								<input type="text" class='form__input' placeholder='Тип мусора'>
+							</div>
+
+							<div class="form__input-wrap form__icon form__icon--volume form__row">
+								<input type="text" class='form__input' placeholder='Объем (приблизительно)'>
+							</div>
+
+							<div class="form__input-wrap form__icon form__icon--phone form__row">
+								<input type="tel" class='form__input' placeholder='Телефон'>
+							</div>
+
+							<div class="form__row">
+								<button class="btn btn--submit btn--green">Отправить заявку</button>
+							</div>
+							<div class="form__row">
+								<div class="privacy">
+									Отправляя заявку, даю согласие на <a class='privacy__a italic' href="/privacy" target='_blank'>обработку персональных данных</a>
+								</div>
+							</div>
+						</div>
+					</form>
+				</div>
+				<div class="col-md-6 d-flex align-items-end">
+					<img data-src="img/blue-car.png" class="wow fadeInUp cta-img lazy">
+				</div>
+			</div>
+		</div>
+		<img data-src="img/bottom.png" class="section-line section-line-bottom lazy">
+	</section>
+
+
+
+
+<footer class="footer" id='footer'>
+	<div class="custom-container">
+		<div class="row">
+			<div class="col-lg-3 col-md-6 footer__item wow fadeInUp delay-1s">
+				<div class="footer__logo-wrap">
+					<img data-src="img/logo.svg" width="200" height="200" class="footer__logo lazy">
+				</div>
+				<div class="footer__description italic">
+					Вывоз мусора на мусорные полигоны  в Ханты-Мансийском автономном округе с предоставлением всей документации
+				</div>
+				<div class="footer__company">
+					ООО «КомТрансАвто» <br>628422, Ханты-Мансийский автономный округ – Югра, <br>г. Сургут, ул. Энергостроителей, д. 5, помещение №409 
+				</div>
+				<a href="#" class="footer__privacy">Политика конфиденциальности</a>
+			</div>
+			<div class="col-lg-3 col-md-6 footer__item wow fadeInUp delay-2s">
+				<div class="footer__caption bold">
+					Контакты
+				</div>
+				<div class="contacts">
+					<a href="" class="contacts__item contacts__item--whatsapp">
+						+7 999 999 99 99 
+					</a>
+					<a href="" class="contacts__item contacts__item--viber">
+						+7 999 999 99 99 
+					</a>
+					<a href="" class="contacts__item contacts__item--phone">
+						+7 3462 55 03 97 
+					</a>
+					<a href="" class="contacts__item contacts__item--mail">
+						disp-kta@ecoteo.ru
+					</a>
+					<div href="" class="contacts__item contacts__item--schedule">
+						Пн - пт: 8-00 - 17-00;<br>Сб, Вс: выходной 
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-6 footer__item wow fadeInUp delay-3s">
+				<div class="footer__caption bold">
+					Навигация
+				</div>
+				<nav class="footer__nav">
+					<ul class="footer__ul">
+						<li class="footer__li">
+							<a href="#services" rel='m_PageScroll2id' class="footer__a">Услуги</a>
+						</li>
+						<li class="footer__li">
+							<a href="#steps" rel='m_PageScroll2id' class="footer__a">Формат работы</a>
+						</li>
+						<li class="footer__li">
+							<a href="#standarts" rel='m_PageScroll2id' class="footer__a">Стандарты работы</a>
+						</li>
+						<li class="footer__li">
+							<a href="#order-popup" class="popup-link footer__a">Заказать вывоз</a>
+						</li>
+						<li class="footer__li">
+							<a href="#regions" rel='m_PageScroll2id' class="footer__a">Регион работы</a>
+						</li>
+					</ul>
+				</nav>		
+			</div>
+			<div class="col-lg-3 col-md-6 footer__item wow fadeInUp delay-4s">
+				<a href="#callback-popup" class="popup-link btn btn--footer btn--green"><span>Заказать звонок</span></a>
+				<a href='#' class="developer">
+					<img data-src="img/developer.png" class="developer__img lazy">
+					<div class="developer__text">
+						Разработка и поддержка сайта - агентство «Без иллюзий»
+					</div>
+				</a>
+			</div>
+		</div>
+	</div>
+</footer>
+
+<!-- Всплывашки всякие -->
+
+<div id="callback-popup" class="popup mfp-hide">
+    <div class="popup__content">
+        <div class="popup__caption">
+            Закажите обратный звонок
+        </div>
+        <div class="popup__description">
+            Мы перезвоним в течение 5 минут в рабочее время
+        </div>
+    </div>
+    <div class="popup__form">
+        <form class="form form--arrow form--popup">
+            <div class="form__input-wrap form__icon form__icon--phone form__row">
+                <input type="tel" class='form__input' placeholder='Телефон'>
+            </div>
+            <div class="form__row">
+                <button class="bold btn btn--big btn--fullwidth">Отправить заявку</button>
+            </div>
+            <div class="form__row">
+                <div class="privacy">
+                    Отправляя заявку, даю согласие на <a class='privacy__a italic' href="/privacy" target='_blank'>обработку персональных данных</a>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+<div id="success-popup" class="popup success mfp-hide">
+		<div class="success__icon-wrap animated delay-1s">
+			<img src="img/check.svg" class="success__icon">
+		</div>	
+	<div class="success__caption">
+		Спасибо за заявку!
+	</div>
+	<div class="success__text">
+		Мы свяжемся с Вами в течение 5 минут в рабочее время
+	</div>
+</div>
+
+
+<div id="order-popup" class="popup mfp-hide">
+    <div class="popup__content">
+        <div class="popup__caption">
+            Отправьте заявку на вывоз мусора
+        </div>
+        <div class="popup__description">
+            Мы перезвоним в течение 5 минут в рабочее время
+        </div>
+    </div>
+    <div class="popup__form">
+        <form class="form form--arrow form--popup">
+            <div class="form__input-wrap form__icon form__icon--city form__row">
+                <select class="form__select">
+                    
+				    <option value="" class="form__option">г. Сургут</option>
+				    <option value="" class="form__option">Сургутский район (весь, кроме г.п. Белый Яр)</option>
+				    <option value="" class="form__option">г. Когалым</option>
+				    <option value="" class="form__option">г. Нижневартовск</option>
+				    <option value="" class="form__option">Нижневартовский район (г.п. Излучинск)</option>
+				    <option value="" class="form__option">г. Ханты-Мансийск</option>
+				    <option value="" class="form__option">г. Нягань</option>
+				    <option value="" class="form__option">Березовский район (весь)</option>
+				    <option value="" class="form__option">Белоярский район (весь)</option>
+				    <option value="" class="form__option">Октябрьский район (весь)</option>
+                </select>
+            </div>
+            <div class="form__input-wrap form__icon form__icon--type form__row">
+                <input type="text" class='form__input' placeholder='Тип мусора'>
+            </div>
+            <div class="form__input-wrap form__icon form__icon--volume form__row">
+                <input type="text" class='form__input' placeholder='Объем (приблизительно)'>
+            </div>
+            <div class="form__input-wrap form__icon form__icon--phone form__row">
+                <input type="tel" class='form__input' placeholder='Телефон'>
+            </div>
+            <div class="form__row">
+                <button class="bold btn btn--big btn--fullwidth">Отправить заявку</button>
+            </div>
+            <div class="form__row">
+                <div class="privacy">
+                    Отправляя заявку, даю согласие на <a class='privacy__a italic' href="/privacy" target='_blank'>обработку персональных данных</a>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+<div id="contract-popup" class="popup mfp-hide">
+    <div class="popup__content">
+        <div class="popup__caption">
+            Получить КП или заключить договор
+        </div>
+        <div class="popup__description">
+            Мы перезвоним в течение 5 минут в рабочее время
+        </div>
+    </div>
+    <div class="popup__form">
+        <form class="form form--arrow form--popup">
+            <div class="form__input-wrap form__icon form__icon--phone form__row">
+                <input type="tel" class='form__input' placeholder='Телефон'>
+            </div>
+            <div class="form__input-wrap form__icon form__icon--email form__row">
+                <input type="email" class='form__input' placeholder='E-mail'>
+            </div>            
+            <div class="form__row">
+                <button class="bold btn btn--big btn--fullwidth">Отправить заявку</button>
+            </div>
+            <div class="form__row">
+                <div class="privacy">
+                    Отправляя заявку, даю согласие на <a class='privacy__a italic' href="/privacy" target='_blank'>обработку персональных данных</a>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+	<a href='#' class="sticky-block callback-btn">
+		<img src="img/callback-phone.svg" class='callback-btn__img'>
+	</a>
+	
+	<script src="js/scripts.min.js"></script>
+
+</body>
+</html>
