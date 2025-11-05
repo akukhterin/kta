@@ -6,3 +6,7 @@
 /**/Thumbs.db
 /**/*.DS_Store
 /*.js
+/app/sass
+/app/scss
+*.rar
+.gitignore
